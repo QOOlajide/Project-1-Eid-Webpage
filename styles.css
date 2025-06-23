@@ -1,0 +1,24 @@
+h1 {
+    border-style: solid;
+    border-color: rgb(215, 184, 137);
+    padding-bottom: 30px;
+
+}
+
+footer {
+    position: fixed;
+    
+}
+.create-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.zakat-bruh {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    /*important! default for flexbox is horizontal!*/
+    /* justify-content: center; */
+}
