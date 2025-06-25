@@ -2,9 +2,12 @@ h1 {
     border-style: solid;
     border-color: rgb(215, 184, 137);
     padding-bottom: 30px;
+    background-color: floralwhite;
 
 }
-
+.body {
+    background-color:beige;
+}
 footer {
     position: fixed;
     
@@ -12,7 +15,7 @@ footer {
 .create-row {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px
 }
 .zakat-bruh {
     display: flex;
