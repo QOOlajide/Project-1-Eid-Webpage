@@ -5,7 +5,7 @@ h1 {
     background-color: floralwhite;
 
 }
-.body {
+body {
     background-color:beige;
 }
 footer {
@@ -24,4 +24,41 @@ footer {
     flex-direction: column;
     /*important! default for flexbox is horizontal!*/
     /* justify-content: center; */
+}
+#live-update-text {
+    margin-top: 20px;
+    margin-bottom: 50px; 
+    border-style: solid; 
+    border-color: chocolate;
+    background-color: chocolate;
+}
+h3 {
+    margin-bottom: .020px;
+    color:rgb(160, 131, 93);
+}
+h2 {
+    color:rgb(160, 131, 93);
+    margin-bottom: 15px;
+}
+p {
+    margin: 0px;
+}
+a {
+    font-size: 20px;
+    text-decoration: none;
+    /*Didn't like the traditional underline touch*/    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color all 0.3s ease;
+}
+a:link {
+    color:rgb(84, 68, 48);
+}
+a:visited {
+    color:rgb(79, 45, 2);
+}
+a:hover {
+    color:rgb(218, 199, 175);
+}
+a:active {
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
 }
