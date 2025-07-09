@@ -14,7 +14,7 @@ footer {
 }
 .create-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px
 }
 .zakat-bruh {
@@ -62,11 +62,15 @@ a:hover {
 a:active {
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
 }
-#signing-up{
+#Sign-Up{
     display: flex;
     justify-content:center;
 }
 .beauty {
     display: flex;
     justify-content: center;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
 }
