@@ -8,6 +8,27 @@ h1 {
 body {
     background-color:beige;
 }
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(84, 68, 48);
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    background: none;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: rgb(218, 199, 175);
+    border-bottom: 2px solid rgb(218, 199, 175);
+}
+
+.nav-link:active {
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
 footer {
     position: fixed;
     
@@ -73,4 +94,34 @@ a:active {
 header {
     display: flex;
     justify-content: space-evenly;
+    color:black;
+    border-style: solid;
+    background-color: black;
+}
+/* Default dark mode style */
+.dark-mode {
+    background-color: black;
+    color:cornsilk;
+    
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1 {
+    
+}
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+
+}
+/* Add style to button */
+#theme-button {
+
+}
+
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+
+
 }
