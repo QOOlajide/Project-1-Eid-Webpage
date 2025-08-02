@@ -102,7 +102,7 @@ header {
 .dark-mode {
     background-color: black;
     color:cornsilk;
-    
+
 }
 
 /* Example: Different dark mode style for h1 */
@@ -125,3 +125,38 @@ header {
 
 
 }
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+**/
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+}
+.rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+}
+form {
+    margin: 10px 20px 0px 0px;
+}
+#rsvp-form{
+    
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color: palevioletred;
+  /* Set border-color and background */
+}
+
