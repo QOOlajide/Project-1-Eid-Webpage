@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- head
+
+<head>
+    <!-- head
         - Link to the favicon (small image that appears in the browser tab)
         - Link to the CSS file (used to style the webpage)
         When To Modify:
@@ -10,43 +11,45 @@
         - [ ] Any time after
         -->
 
-        <meta charset="UTF-8">
-        <!--Once again, I don't intend for this to be a simple project with bland features
+    <meta charset="UTF-8">
+    <!--Once again, I don't intend for this to be a simple project with bland features
         Also necessary for modern-day browsers to read and encode certain characters
         that may be traditionally seen as foreign-->
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <!--To take things up a notch, I've linked an icon library "Font Awesome, which allows me to
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--To take things up a notch, I've linked an icon library "Font Awesome, which allows me to
         display the live updates Icon for when the imam should arrive-->
-        <title>Quamdeen's Website</title>
-        <div class="beauty">
+    <title>Quamdeen's Website</title>
+    <div class="beauty">
         <i class="fas fa-broadcast-tower"></i>
         <span id="live-update-text">Loading updates...</span>
-        </div>
-        <style>
-            h1 {
-                font-family: 'Times New Roman', Times, serif;
-                font-style: italic;
-                color:bisque;
-                text-align: center;
-            }
-            /* Style rules go here. */
-        </style>
-    </head>
-    
-    <body>
+    </div>
+    <style>
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: bisque;
+            text-align: center;
+        }
+
+        /* Style rules go here. */
+    </style>
+</head>
+
+<body>
     <header>
-        <nav class="nav">
-            <a href="#Home">Home</a>
-            <a href="#Venue">Venue</a>
-            <a href="#Eid-Guide">Eid Guide</a>
-            <a href="#Pay-Zakat">Pay Zakat</a>
-            <a href="#Sign-Up">Register</a>
-            <a href="#Ask-Question">Community Q&A</a>
+        <nav class="nav-link">
+            <a href="#Home" class="nav-link">Home</a>
+            <a href="#Venue" class="nav-link">Venue</a>
+            <a href="#Eid-Guide" class="nav-link">Eid Guide</a>
+            <a href="#Pay-Zakat" class="nav-link">Pay Zakat</a>
+            <a href="#Sign-Up" class="nav-link">Register</a>
+            <a href="#Ask-Question" class="nav-link">Community Q&A</a>
+            <button id="theme-button" class="nav-link">Toggle Dark Mode</button>
         </nav>
     </header>
 
-        <!-- headings
+    <!-- headings
 
         Purpose:
         - Main header section of the webpage
@@ -58,12 +61,12 @@
         - [ ] Project 4 (REQUIRED FEATURE) 
         - [ ] Any time after
         -->
-        <!-- <img id="header-img" src="./img/logo500.png"/> -->
-        <h1 id="Home">Eid Al Fitr</h1>
-        <h2 style="text-align: center;">Eat, Drink, Play, Pray, and Celebrate</h2>
+    <!-- <img id="header-img" src="./img/logo500.png"/> -->
+    <h1 id="Home">Eid Al Fitr</h1>
+    <h2 style="text-align: center;">Eat, Drink, Play, Pray, and Celebrate</h2>
 
-        
-        <!-- about
+
+    <!-- about
 
         Purpose:
         - Section for general info about the event
@@ -74,10 +77,10 @@
         - [ ] Project 2 (STRETCH FEATURE) 
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
-        --> 
+        -->
 
 
-        <!-- schedule
+    <!-- schedule
 
         Purpose:
         - Section for specific info about the event's schedule
@@ -87,50 +90,147 @@
         - [ ] Project 2 (REQUIRED FEATURE) 
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
-        --> 
-        <h3 id="Venue">Venue Overview</h3>
-            <div class="create-row">
-            <img alt="Invisible" src="img/billow926unsplash.jpg" width="300" height="250"/>
-            <img alt="" src="img/jermaine.jpg" width="300" height="250"/>
-            <img alt="Undecided" src=""/>
-            </div>
-        <h3 id="Eid-Guide">Eid Guide</h3>
-            <p>Description of event activity.</p>
+        -->
+    <h3 id="Venue">Venue Overview</h3>
+    <div class="create-row">
+        <img alt="Bouncy House" src="img/billow926unsplash.jpg" width="300" height="250" />
+        <img alt="Prayer/Park Venue" src="img/jermaine.jpg" width="300" height="250" />
+        <img alt="Intended Barbeque" src="" />
+    </div>
+    <h3 id="Eid-Guide">Eid Guide</h3>
+    <p> Buraidah (radiyallāhu ‘anhu) said: “The Prophet (salallāhu ‘alaihi
+        wasallam) would not leave home on the day of Fitr until he had eaten and he would not eat on the day of Adhā
+        until he had prayed.” (Reported by Ahmad and others)
+        Shaikh Taqiyyud-Deen Ibn Taymiyyah (rahimahullāh) said: Allah preceded the prayer before the sacrifice in His
+        saying: (فَصَلِّ لِرَبِّكَ وَانْحَرْ) “So pray to your Lord and offer the sacrifice.” And He preceded the
+        purification before the prayer in His saying: (قَدْ أَفْلَحَ مَنْ تَزَكَّى وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّى) “He
+        has certainly succeeded who purifies himself. And mentions the name of his Lord and prays.” So the Sunnah is to
+        give Sadaqah (Zakāt Al-Fitr as purification)
+        before praying on the day of Fitr and to pray before sacrificing on ‘Eid Al-Adhā.
+        It is the Sunnah to say the takbīrs aloud when leaving out for the ‘Eid Prayer. It is from the Sunnah to sit
+        near the imām who leads the prayer and delivers the khutbah and there is a virtue in waiting for the prayer to
+        begin. The method of takbīr of Ibn Mas’ūd (radiyallāhu ‘anhu) on the day of ‘Eid was:
+        ‎اللّه أكبر • اللّه أكبر • اللّه أكبر • لا إله إلّا اللّه • اللّه أكبر • اللّه أكبر • وَللّهِ الحمد</p>
+    <p>It is from the Sunnah to beautify oneself for the ‘Eid Prayer with the best garments one has due to the hadeeth
+        of Jābir: “The Prophet (salallāhu ‘alaihi wasallam) would adorn himself with a garment that he would wear on the
+        two ‘Eids and on the day of Jumu’ah.” (Reported by Ibn Khuzaymah in his Sahīh) It is reported from Ibn ‘Umar
+        (radiyallāhu ‘anhumā) that “he would wear his best garments on the two ‘Eids.” (Reported by Al-Bayhaqi with a
+        good isnād)
+        Women must wear the correct hijāb over her house clothes according to the Sharī’ah―which is a khimār over which
+        she wears a jilbāb. She does not apply make-up or wear perfume or high-heels in public. Please read:
+        Understanding the Muslim Dress Code: Modesty for Men and the Hijāb for Women. The woman should fulfil the
+        conditions of Jilbāb at all times.
+        Women must attend the ‘Eid prayer too. Al-Bukhāri (no. 971) reported from Umm ‘Atiyyah (radiyallāhu anhā): “We
+        were commanded to come out on the day of ‘Eid and to bring out the virgin girls from their houses and
+        menstruating women so that they might stand behind the men and say takbīr along with them and supplicate to
+        Allah along with them and hope for the blessings of that day and for purification from sins.”
+        Menstruating women witness the prayer and enjoy the blessings of the occasion but do not pray. She (radiyallāhu
+        ‘anhā) also said: “Allah’s Messenger would order the virgins, the mature women, the secluded and the
+        menstruating women to go out for the two ‘Eids. As for the menstruating women, they were to stay away from the
+        musallā (i.e. from the prayer) and participate in the Muslims supplications.” One of them said:
+        “O Messenger of Allah! What if she does not have a jilbāb?” He said: “Then let her sister lend her a jilbāb.”
+        (Tirmidhi, no. 539) [Taken from <a
+            href="https://abukhadeejah.com/the-day-of-eid-and-the-prayer-obligations-sunan-celebration/">Abu
+            khadeejah</a>]</p>
 
-            <!-- Keep this for your first dropdown
+    <!-- Keep this for your first dropdown
             under 'Eid Guide' <h2>Eid Al-Adha: The Days of Eating and Drinking</h2> -->
-            <p>There comes in the hadith of Allah's Messenger... </p>
+    <p>There comes in many hadith of Allah's Messenger (alayhi salam)...</p>
+    <ul>
+        <li>A’ishah (radiyallāhu ‘anhā) said: “Abu Bakr entered our home (on the day of ‘Eid) and there were two girls
+            from the Ansār with me, singing about the day of Bu’āth.” She said: “But they were not really singers.” Abu
+            Bakr said: “The sounds of Shaytān in the house of the Prophet?” That was on the day of ‘Eid. However, the
+            Prophet (صلى الله عليه وسلم) said: “O Abu Bakr, every people has its celebration and this is our
+            celebration.” (Ibn Mājah, no. 1898) </li>
+        <li>A’ishah (radiyallāhu ‘anhā) reported: “By Allah! I remember the Messenger of Allah (صلى الله عليه وسلم)
+            standing at the door of my apartment facing (the Mosque) screening me with his garment enabling me to see
+            the sport of the Abyssinians as they played with their daggers in the Prophet’s Mosque. He kept standing for
+            me till I was satisfied and then I went back ―and you can well imagine how long a woman of tender of age who
+            is fond of sports could have watched it.” (Muslim, no. 892)</li>
+        <li>‘A’ishah (radiyallāhu ‘anhā) reported: “Some Abyssinians came and gave a demonstration of an armed fight on
+            the ‘Eid day in the mosque. The Messenger of Allah (صلى الله عليه وسلم) invited me to watch. I placed my
+            head on his shoulder and began to watch their sport until it was I who turned away.” (Muslim, no. 892) [All
+            taken from <a
+                href="https://abukhadeejah.com/the-day-of-eid-and-the-prayer-obligations-sunan-celebration/">Abu
+                khadeejah</a>]</li>
+    </ul>
 
-            <img alt="Image description" src="./img/example.png"/>
 
-            
-        <div class="zakat-bruh" id="Pay-Zakat">
+
+    <div class="zakat-bruh" id="Pay-Zakat">
         <h3>Event Activity 2</h3>
-        <p style="margin-top: 0px;"><a href="https://abukhadeejah.com/the-rulings-of-zakat-al-fitr/" target="_blank">Learn More About Zakat-Al Fitr here</a></p>
-        <button type="button" style="background-color:brown">Pay Zakat</button>        
-        </div>
+        <p style="margin-top: 0px;"><a href="https://abukhadeejah.com/the-rulings-of-zakat-al-fitr/"
+                target="_blank">Learn More About Zakat-Al Fitr here</a></p>
+        <button type="button" style="background-color:brown">Pay Zakat</button>
+    </div>
 
-            
-        <img alt="Image description" src="./img/example.png"/>
-        <h3>Event Activity 3</h3>
-        <div id="Sign-Up">
+
+    <img alt="Image description" src="./img/example.png" />
+    <h3>Event Activity 3</h3>
+    <div id="Sign-Up">
         <p>Description of event activity.</p>
         <button type="button">Reserve Your Spot Here!</button>
+    </div>
+
+
+    <h3 id="Ask-Question">What to Expect</h3>
+    <h4>Tag Line</h4>
+    <ul>
+        <li> <b style="color:green">Bullet 1:</b> <i>Description</i></li>
+        <li> <b>Bullet 2:</b> <i>Description</i></li>
+        <li> <b>Bullet 3:</b> <i>Description</i></li>
+    </ul>
+
+    <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+    <!-- 
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+-->
+    <div id="rsvp">
+        <h2>RSVP</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                <!-- info goes here -->
+                <p>Here's to an event with numerous Muslims, but never before. Muslims from all over the state
+                    , commemorating to serve Allah and enjoy one of the most festive holidays. And we want <em>you</em>
+                    to be a part of it!
+                </p>
+            </div>
+            <div class="rsvp-participants">
+                <p>🎟️ Muslim from Texas has RSVP'd!</p>
+                <p>🎟️ Non-Muslim from New York has RSVP'd!</p>
+                <p>🎟️ Muslim from Montana has RSVP'd!</p>
+            </div>
         </div>
 
+        <!--- Sign RSVP Form --->
+        <div class="form-container">
+            <form id="rsvp-form" title="rsvp-form">
+                <!-- form inputs go here -->
+                <label>Faith:</label>
+                <input type="text" for="faith" id="faith">
+                <label>Email:</label>
+                <input type="email" for="email" id="email">
+                <label>State of Residence:</label>
+                <input type="text" for="state" id="states">
+                <label>Allergies?: </label>
+                <input type="text" for="allergies" id="allergies">
+                <!-- Submit button -->
+                <button id="rsvp-button">Reserve your spot, here!</button>
+            </form>
+        </div>
+    </div>
+    <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] -->
 
-        <h3 id="Ask-Question">What to Expect</h3>
-        <h4>Tag Line</h4>
-        <ul>
-            <li> <b style="color:green">Bullet 1:</b> <i>Description</i></li>
-            <li> <b>Bullet 2:</b> <i>Description</i></li>
-            <li> <b>Bullet 3:</b> <i>Description</i></li>
-        </ul>
-
-        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
-        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
-
-        <!-- links
+    <!-- links
 
         Purpose:
         - Links to other resources related to the event
@@ -139,21 +239,23 @@
         - [ ] Project 2 (STRETCH FEATURE) 
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
-        --> 
-        <h2>References</h2>
+        -->
+    <h2>References</h2>
+    <p>Abu Khadeejah. </p>
+    <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+    <a class="block" href="https://www.codepath.org">
+        <article>
+            <h3>Link title</h3>
+            <p>Link description</p>
+        </article>
+    </a>
 
-        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
-        <a class="block" href="https://www.codepath.org">
-            <article>
-                <h3>Link title</h3>
-                <p>Link description</p>
-            </article>
-        </a>
-            
-        <footer>
-            <p>Learn more about Islam <a href="https://ccdawah.org/interested-about-islaam/" target="_blank"> here</a></p>
-        </footer>
-        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+    <footer>
+        <p>Learn more about Islam <a href="https://ccdawah.org/interested-about-islaam/" target="_blank"> here</a></p>
+    </footer>
+    <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+    <script src="index.js"></script>
 
-    </body>
+</body>
+
 </html>>
