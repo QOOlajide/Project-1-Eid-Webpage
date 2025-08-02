@@ -1,5 +1,5 @@
 # Project-1-Eid-Webpage
-# 2025 Eid-Al-Adha Festivity Webpage 🎉🕌
+# 2025 Eid-Al-Fitr Festivity Webpage 🎉🕌
 
 ## 🌙 About the Project
 This is a personal web development journey where I’m building a dynamic, user-friendly webpage dedicated to the 2025 Eid al-Adha celebration. Over ten weeks, I’ll be adding new features while learning and applying HTML, CSS, and JavaScript.
