@@ -41,24 +41,16 @@ themeButton.addEventListener("click", toggleDarkMode);
 const form = document.getElementById('rsvp-form');
 
 
-const addParticipant = (event) => {
-    event.preventDefault(); // prevent form reload
+const addParticipant = (person) => {
+  // ✅ Create a new <p> element
+  let participantInfo = document.createElement("p");
 
-    let names = document.getElementById('faith').value;
-    let email = document.getElementById("email").value;
-    let states = document.getElementById("states").value;
-    let allergies = document.getElementById("allergies").value;
+  // ✅ Use only data from the person object
+  participantInfo.innerText = `🎟️ ${person.myFaith} from ${person.myHometown} just RSVP'd!`;
 
-    // Create new <p> element
-    let participantInfo = document.createElement("p");
-
-    // Set the content of the <p>
-    participantInfo.innerText = `🎟️ ${names} from ${states} just RSVP'd!`;
-
-    // Append to rsvp-participants <div>
-    document.querySelector(".rsvp-participants").appendChild(participantInfo);
-    //above is for classes, NOT ID'S
-}
+  // ✅ Append to the participants container
+  document.querySelector(".rsvp-participants").appendChild(participantInfo);
+};
 
 // Step 3: Add a click event listener to the submit RSVP button here
 
@@ -81,28 +73,39 @@ const validateForm = (event) => {
   event.preventDefault();
   let containsErrors = false;
 
-  var rsvpInputs = document.getElementById("rsvp-form").elements;
-  // TODO: Loop through all inputs
-  for (let i = 0; i < rsvpInputs.length; i++) {
-    if (rsvpInputs[i].value.length < 2) {
-    containsErrors = true;
-    rsvpInputs[i].classList.add("error");
+  const rsvpInputs = document.getElementById("rsvp-form").elements;
+
+  // 👤 Create the person object from form inputs
+  const person = {
+    myFaith: rsvpInputs[0].value,
+    myEmail: rsvpInputs[1].value,
+    myHometown: rsvpInputs[2].value
+  };
+
+  // 🔁 Validate each value using Object.entries
+  const fields = Object.entries(person);
+  for (let i = 0; i < fields.length; i++) {
+    const [key, value] = fields[i];
+    if (value.length < 2) {
+      containsErrors = true;
+      rsvpInputs[i].classList.add("error");
     } else {
-    rsvpInputs[i].classList.remove("error");
+      rsvpInputs[i].classList.remove("error");
     }
   }
 
-
-  // TODO: Inside loop, validate the value of each input
-
-  // TODO: If no errors, call addParticipant() and clear fields
+  // ✅ If all inputs are valid:
   if (containsErrors === false) {
-    addParticipant(); // Call the RSVP handler
+    addParticipant(person); // 🔥 Pass the object to the RSVP handler
+    toggleModal(person);
+
+    // 🧽 Clear form fields
+    for (let i = 0; i < rsvpInputs.length; i++) {
+      rsvpInputs[i].value = "";
+    }
   }
-  for (let i = 0; i < rsvpInputs.length; i++) {
-    rsvpInputs[i].value = ""; // Clear each input field
-  }
-}
+};
+
 
 
 // Step 3: Replace the form button's event listener with a new one that calls validateForm()
@@ -110,3 +113,39 @@ form.addEventListener("submit", validateForm);
 
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+const toggleModal = (person) => {
+  const modal = document.getElementById("success-modal");
+  const modalContent = document.getElementById("modal-item");
+
+  // Style-related: show modal
+  modal.style.display = "flex";
+
+  // Update modal content with a personalized message
+  modalContent.innerText = `🎉 Thank you, ${person.myFaith} from ${person.myHometown}! Your RSVP has been received.`;
+
+  // Optional: Add more styling dynamically if needed
+  // modalContent.style.color = "green"; // example
+
+  // Hide modal after 5 seconds
+  let intervalId = setInterval(animateImage, 500);
+setTimeout(() => {
+    modal.style.display = 'none';
+    clearInterval(intervalId);
+}, 5000);
+};
+// Step 1: Create animation variables
+let rotateFactor = 0; // Starts at 0
+let modalImage = document.getElementById("modal-image"); // Make sure your image has this ID
+
+// Step 2: Create the animateImage function
+const animateImage = () => {
+  // Toggle the rotation angle
+  if (rotateFactor === 0) {
+    rotateFactor = -10;
+  } else {
+    rotateFactor = 0;
+  }
+
+  // Apply the rotation using CSS transform
+  modalImage.style.transform = `rotate(${rotateFactor}deg)`;
+};
